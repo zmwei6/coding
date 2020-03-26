@@ -1,6 +1,7 @@
-Debug/
-.cproject
-.project
-.settings
+**/Debug/
+**/Release/
+**/.cproject
+**/.project
+**/.settings/
 .metadata/
 RemoteSystemsTempFiles/
