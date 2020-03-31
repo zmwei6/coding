@@ -1,0 +1,34 @@
+//============================================================================
+// Name        : cpptest13.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Chained Call in C++
+//============================================================================
+
+#include<iostream>
+using namespace std;
+
+class Test
+{
+private:
+    static int count;
+public:
+    Test& fun(); // fun() is non-static now
+};
+
+int Test::count = 0;
+
+Test& Test::fun()
+{
+    Test::count++;
+    cout<<Test::count<<" ";
+    return *this;
+}
+
+int main()
+{
+    Test t;
+    t.fun().fun().fun().fun();
+    return 0;
+}
