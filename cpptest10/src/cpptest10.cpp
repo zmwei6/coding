@@ -3,7 +3,7 @@
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Conversion Constructor in C++
+// Description : User-defined Conversion in C++
 //============================================================================
 
 #include <iostream>
@@ -48,9 +48,10 @@ int main( int argc, const char* argv[] )
 {
     cout << "Creating b:\n";
     ClassB b( 5 );
+    int i = b;	// implicitly converts the object b to an integer.
     cout << "Converting b to a ClassA:\n";
     ClassA a = b;
     ClassA c = ClassB(10);
     ClassA d = b.operator ClassA();
-    ClassA e = static_cast<ClassA>( b );
+    //ClassA e = static_cast<ClassA>( b );	//ambiguous
 }

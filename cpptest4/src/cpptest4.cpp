@@ -3,7 +3,7 @@
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Coversion Constructor in C++
+// Description : User-defined conversions in C++
 //============================================================================
 
 #include<iostream>
@@ -31,6 +31,6 @@ void g(A a)
 int main() {
   B b(10);
   g(b);
-  g(20);
+  g(20);	// equivalent to g(A(20))
   return 0;
 }

@@ -15,9 +15,11 @@ using namespace std;
 
 struct A {
   A() { std::cout << "A"; }
+  ~A() { std::cout << "a"; }
 };
 struct B {
   B() { std::cout << "B"; }
+  ~B() { std::cout << "b"; }
 };
 
 class C {

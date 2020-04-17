@@ -5,6 +5,10 @@
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
+/*
+ * in character arithmetic, typecasting of char variable to ‘char’ is explicit and
+ * to ‘int’ it is implicit
+ */
 
 #include <iostream>
 using namespace std;
