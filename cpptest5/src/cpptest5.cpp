@@ -26,6 +26,8 @@ class derived: public b1, public b2 {};
 
 int main(void)
 {
+	int n = sizeof(0)["abcdefghij"];
+	std::cout << n << endl;
   cout<<sizeof(derived)<<endl;
   return 0;
 }
