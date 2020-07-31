@@ -13,7 +13,7 @@
  * associative. When we increment *p by 1, it starts pointing to second character of “knowledge”.
  * Therefore, the first printf statement prints “nowledge”. Let us consider the expression *p++ in second
  * printf() . Since precedence of postfix ++ is higher than *, p++ is evaluated first. And since it’s a
- * psotfix ++, old value of p is used in this expression. Therefore, second printf statement prints “nowledge”.
+ * postfix ++, old value of p is used in this expression. Therefore, second printf statement prints “nowledge”.
  * In third printf statement, the new value of p (updated by second printf) is used, and third printf()
  * prints “s”.
  */

@@ -14,14 +14,14 @@
 int main()
 {
     int i, n;
-    char *x="Alice";
+    char *x="Alice";	// x is a pointer to const char string "Alice"
     n = strlen(x);
-    *x = x[n];
+    *x = x[n];			// run-time error, try to modify const char string
     for(i=0; i<=n; i++)
     {
         printf("%s ", x);
         x++;
     }
-    printf("\n", x);
+    printf("\n");
     return 0;
 }
